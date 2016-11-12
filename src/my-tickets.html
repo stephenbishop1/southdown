@@ -1,0 +1,122 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="my-tickets">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+
+        padding: 10px;
+      }
+      
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th, td {
+        padding: 5px;
+        text-align: left;
+      }
+    </style>
+
+    <div class="card">
+      <h1>TICKET INFORMATION</h1>
+      <p>For tickets starting from 1st August 2016.</p>
+      <h2>SINGLE & RETURN TICKETS</h2>
+      <p>Single and Return fares are available at all times between any 2 points on any individual route.</p>
+
+      <h2>SOUTHDOWN SAVER TICKETS</h2> 
+      <p>A Southdown Saver gives unlimited travel on any Southdown bus at any time of the day. They are available for one week (buy on the bus) or for a period of a month or multiple months, half term, termly (and have unlimited travel through the half term) or annually.</p>
+
+<p>
+<table style="width:50%">
+  <tr>
+    <th></th>
+    <th>Adults</th>
+    <th>Child (under 16)</th> 
+    <th>Family**</th>
+  </tr>
+  <tr>
+    <td>Day</td>
+    <td>£7.00</td> 
+    <td>£4.00</td>
+    <td>£14.00</td>
+  </tr>
+  <tr>
+    <td>Week</td>
+    <td>£26.00</td> 
+    <td>£20.00</td>
+    <td>N/A</td>
+  </tr>
+    <tr>
+    <td>Month</td>
+    <td>£90.00</td> 
+    <td>£80.00</td>
+    <td>N/A</td>
+  </tr>  
+  <tr>
+    <td>Half-Term</td>
+    <td>£160.00</td> 
+    <td>£120.000</td>
+    <td>N/A</td>
+  </tr>
+    <tr>
+    <td>Term</td>
+    <td>£320.00</td> 
+    <td>£230.00</td>
+    <td>N/A</td>
+  </tr>
+    <tr>
+    <td>Year</td>
+    <td>£900.00</td> 
+    <td>£630.00</td>
+    <td>N/A</td>
+  </tr>
+</table>
+ </p>
+
+      <h2>DISCOVERY TICKETS</h2>
+      <p>The Discovery ticket gives you freedom and unlimited use on most bus services in the South of England. Please check with the other bus companies you wish to travel with. The daily rate is £8.50 for Adults, £7.00 for Children (5-15) and £12.00 for Families (Valid for 4 persons up to 2 Adults).</p>
+      <h2>CHILD RATE AND STUDENT TRAVEL</h2>
+      <p>Child rate fares are available to all children up to the ages of 16 or until the end of year 11. Children under 5 can travel for free provided they are accompanied by an adult passenger (maximum 2 children per fare paying adult).</p>
+
+      <h2>STUDENTS LIVING IN SURREY</h2>
+      <p>16–19 year olds who live in Surrey can purchase child rate tickets if they have purchased a Surrey Student Fare Card. These are available from Surrey County Council by phoning 0300 200 1004 or by visiting <a href="https://www.surreycc.gov.uk/schools-and-learning/schools/school-transport/16-transport-to-school-or-college/student-fare-card-scheme">www.surreycc.gov.uk</a>.</p>
+      <h2>STUDENTS LIVING IN KENT</h2>
+      <p>16-19 year olds who live in Kent can obtain a 16+ Travel Card. To get a 16+ Travel Card you must be older than 16, live in a house that pays council tax to a Kent council and attend a participating school, college or work-based learning provider. If your school, college or work-based learning provider is based outside Kent, but you live in Kent, you can still apply. These are available by phoning 03000 41 84 84 or by visiting <a href="https://www.kent.gov.uk/roads-and-travel/travelling-around-kent/bus-travel/bus-passes/16-travel-card">www.kent.gov.uk/post16travel</a>.</p>
+      <h2>STUDENTS LIVING IN WEST SUSSEX</h2>
+      <p>
+        <ul style="list-style-type:disc">
+          <li>5-19 year olds who live in West Sussex can obtain a 3in1 card.</li>
+          <li>5-16 year olds until the end of school year 11 are able to obtain Child 3in1 (yellow) cards. Holders can purchase single, return and weekly ‘point-to-point’ tickets on journeys starting or finishing in West Sussex at half the usual CHILD rate, as well as Southdown Saver tickets. </li>
+          <li>16-19 year olds in further education are able to obtain Student 3in1 (green) cards. Holders can purchase single, return and weekly ‘point-to-point’ tickets on journeys starting or finishing in West Sussex at half the usual ADULT rate, as well as Southdown Saver tickets.</li>
+        </ul>
+      </p>
+      <h2>STUDENTS LIVING IN GREATER LONDON BOROUGHS</h2>
+      <p>16 – 19 year olds who live within the London Boroughs of Croydon/Bromley can purchase child rate tickets if they have a Southdown student fare card. These are priced at £25 and are available by calling 01342 719619 or <a href="https://firebasestorage.googleapis.com/v0/b/southdown-f8529.appspot.com/o/Other%2Fsouthdown_student_fare_card_2016-2017.pdf?alt=media&token=6344ed75-95f8-4377-b980-04406bd23941">Download Here</a>.</p>
+      <p>Passengers without the appropriate fare card will be charged the normal ADULT fare.</p>
+      <H2>OXTED HOPPA</H2>
+      <P>The Oxted Hoppa ticket gives you unlimited travel in the Oxted area from Hurst Green, Limpsfield Chart, Limpsfield Village, Chalkpit Wood and Old Oxted. Tickets are priced at £3.50 for adults and £2.00 for children.</P>
+      <P>TODO: Link to Southdown Saver Application Form</P>
+    </div>
+
+    
+  </template>
+
+  <script>
+    Polymer({
+      is: 'my-tickets'
+    });
+  </script>
+</dom-module>

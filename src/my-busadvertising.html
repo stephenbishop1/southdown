@@ -1,0 +1,71 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="shared-styles.html">
+<link rel="import" href="../bower_components/iron-icons/maps-icons.html">
+<link rel="import" href="../bower_components/iron-icons/communication-icons.html">
+<link rel="import" href="../bower_components/paper-card/paper-card.html">
+
+<dom-module id="my-busadvertising">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+
+        padding: 10px;
+      }
+    </style>
+
+    <div class="card">
+      <h1>Bus Advertising</h1>
+
+      <h2>Five good reasons for you to advertise on our buses</h2>
+      <p>
+        <ul style="list-style-type:disc">
+          <li><strong>Exposure</strong> -	On the street on average for 14 hours a day - 6 days a week, all year round</li>
+          <li><strong>Awareness</strong> -	Moving, colour, high impact says WHO you are, WHAT you do, WHERE you are </li>
+          <li><strong>Visibility</strong> -	Seen by EVERYONE outdoors - driving, walking, shopping, working... </li>
+          <li><strong>Saturation</strong> -	Buses pass through busy shopping, residential and commercial areas </li>
+          <li><strong>Value</strong> -	It hits directly at your target market audience making you a "Household" name for a fraction of the cost of other advertising media </li>
+        </ul>
+      </p>
+      
+      <p>
+        TV........................Seconds<br>
+        Radio....................Minutes<br>
+        Press....................Hours<br>
+        <strong>BUSES</strong>................	<strong>MONTHS!</strong><br>
+      </p>
+      
+      <p>
+        For all enquiries, please contact:<br>
+        Phillipa Roberts at CBS Outdoor<br>
+        <iron-icon icon="maps:local-phone"></iron-icon> 07971 975638<br>
+        <iron-icon icon="communication:email"></iron-icon> philippa.roberts@cbsoutdoor.co.uk
+      </p>
+    </div>
+    
+    <div class="horizontal">
+      <paper-card image="/images/cbs1.jpg" alt="CBS1">
+      </paper-card>
+    
+      <paper-card image="/images/cbs2.jpg" alt="CBS2">
+      </paper-card>
+    </div>
+    
+  </template>
+
+  <script>
+    Polymer({
+      is: 'my-busadvertising'
+    });
+  </script>
+</dom-module>

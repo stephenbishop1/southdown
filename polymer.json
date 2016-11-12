@@ -3,7 +3,24 @@
   "shell": "src/my-app.html",
   "fragments": [
     "src/my-view1.html",
-    "src/my-view2.html",
-    "src/my-view3.html"
+    "src/my-timetables.html",
+    "src/my-servicestatus.html",
+    "src/my-tickets.html",
+    "src/my-accessibility.html",
+    "src/my-vacancies.html",
+    "src/my-enthusiasts.html",
+    "src/my-links.html",
+    "src/my-busadvertising.html",
+    "src/my-busengineering.html",
+    "src/my-view404.html"
+  ],
+  "sourceGlobs": [
+   "src/**/*",
+   "images/**/*",
+   "bower.json"
+  ],
+  "includeDependencies": [
+    "manifest.json",
+    "bower_components/webcomponentsjs/webcomponents-lite.min.js"
   ]
 }

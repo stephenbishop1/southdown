@@ -10,58 +10,67 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <link rel="import" href="../bower_components/polymer/polymer.html">
 
-<dom-module id="my-view2">
-
+<!-- shared styles for all views -->
+<dom-module id="shared-styles">
   <template>
-
     <style>
-      :host {
-        display: block;
-        padding: 10px;
-      }
       .card {
-        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-        padding: 16px;
         margin: 24px;
+        padding: 16px;
+
+        color: #757575;
         border-radius: 5px;
         background-color: #fff;
-        color: #757575;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
       }
+
       .circle {
         display: inline-block;
-        height: 64px;
+
         width: 64px;
+        height: 64px;
+
+        text-align: center;
+
+        color: #555;
         border-radius: 50%;
         background: #ddd;
-        line-height: 64px;
+
         font-size: 30px;
-        color: #555;
-        text-align: center;
+        line-height: 64px;
       }
-      h1 {
-        font-size: 22px;
+
+      .h1 {
         margin: 16px 0;
+
         color: #212121;
+
+        font-size: 22px;
+      }
+      
+      .h2 {
+        margin: 16px 0;
+
+        color: #33C4FF;
+
+        font-size: 20px;
+      }
+      
+      .route236 {
+        --paper-card-background-color: #33C4FF;
+      }
+      
+      .route324 {
+        --paper-card-background-color: #ff6666;
+      }
+            
+      .route357 {
+        --paper-card-background-color: #9f9fdf;
+      }
+            
+      .route409 {
+        --paper-card-background-color: #5cd65c;
       }
     </style>
-
-    <div class="card">
-      <div class="circle">2</div>
-      <h1>View Two</h1>
-      <p>Ea duis bonorum nec, falli paulo aliquid ei eum.</p>
-      <p>Id nam odio natum malorum, tibique copiosae expetenda mel ea.Detracto suavitate repudiandae no eum. Id adhuc minim soluta nam.Id nam odio natum malorum, tibique copiosae expetenda mel ea.</p>
-    </div>
-
   </template>
-
-  <script>
-
-    Polymer({
-
-      is: 'my-view2'
-
-    });
-
-  </script>
-
 </dom-module>

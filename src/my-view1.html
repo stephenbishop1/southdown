@@ -9,59 +9,81 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 -->
 
 <link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/twitter-widgets/twitter-widgets.html">
+<link rel="import" href="../bower_components/facebook-activity-feed/facebook-activity-feed.html">
+<link rel="import" href="shared-styles.html">
 
 <dom-module id="my-view1">
-
   <template>
-
-    <style>
+    <style include="shared-styles">
       :host {
         display: block;
+
         padding: 10px;
-      }
-      .card {
-        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-        padding: 16px;
-        margin: 24px;
-        border-radius: 5px;
-        background-color: #fff;
-        color: #757575;
-      }
-      .circle {
-        display: inline-block;
-        height: 64px;
-        width: 64px;
-        border-radius: 50%;
-        background: #ddd;
-        line-height: 64px;
-        font-size: 30px;
-        color: #555;
-        text-align: center;
-      }
-      h1 {
-        font-size: 22px;
-        margin: 16px 0;
-        color: #212121;
       }
     </style>
 
     <div class="card">
-      <div class="circle">1</div>
-      <h1>View One</h1>
-      <p>Ut labores minimum atomorum pro. Laudem tibique ut has.
-      <p>Lorem ipsum dolor sit amet, per in nusquam nominavi periculis, sit elit oportere ea.Lorem ipsum dolor sit amet, per in nusquam nominavi periculis, sit elit oportere ea.Cu mei vide viris gloriatur, at populo eripuit sit.</p>
+      <h1>LOCAL BUS OPERATION</h1>
+      <p>Bus services are operated in the counties of Kent, Surrey and Sussex, mainly centred on the towns of Crawley, Edenbridge, Warlingham, Horley, Oxted, Redhill, Reigate and Westerham. Timetable, fares, stop specific next bus or realtime information is available on this website by clicking on the ‘timetables’ icon.</p> 
+      
+      <p>We also have links to the services of neighbouring operators, many of whose services have inter-availability of tickets. Discovery and Saver tickets are a convenient and economic way of touring this picturesque part of the country. </p>
+      
+      <p>Railway replacement services are operated as required to cover emergencies and planned engineering work. We are also able to offer quotations for bus hire.</p> 
+      
+      <p>Our aim is to provide a friendly, efficient and reliable service to all our customers.</p> 
+      
+      <p>Occasionally, circumstances outside our control may delay our buses. If our service has not met your expectations, please let us know, so that we can try to put things right for the future. We welcome feedback and always investigate complaints and suggestions. Also, do let us know if one of our staff has acted ‘beyond the call of duty’ and we will gladly pass on your compliments.</p> 
+      
+      <p>Phone calls are welcome, but where matters need to be investigated with a member of staff, it is extremely helpful to have details in writing; our address is available by following the ‘contact us’ bar on the left of this page.</p>
     </div>
 
+    
+    <div class="card">
+      <h1>Twitter</h1>
+      <twitter-widgets>
+        <a class="twitter-timeline"
+           height="500"
+           data-tweet-limit="5"
+           data-chrome="nofooter transparent"
+           href="https://twitter.com/southdownbuses"
+           Tweets by southdownbuses
+       </a>
+      </twitter-widgets>
+    </div>
+   
+    <!--
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+    
+    <div class="card">
+      <h1>Facebook</h1>
+      <div class="fb-page" data-href="https://www.facebook.com/Southdownbuses" 
+        data-tabs="timeline" 
+        data-small-header="true" 
+        data-adapt-container-width="true" 
+        data-hide-cover="true" 
+        data-show-facepile="true">
+          <blockquote cite="https://www.facebook.com/Southdownbuses" class="fb-xfbml-parse-ignore">
+            <a href="https://www.facebook.com/Southdownbuses">Southdown Buses</a>
+          </blockquote>
+      </div>
+    </div>
+     </-->
   </template>
 
   <script>
-
     Polymer({
-
       is: 'my-view1'
-
     });
-
   </script>
-
 </dom-module>
+
+

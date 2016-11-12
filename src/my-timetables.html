@@ -1,0 +1,88 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="shared-styles.html">
+<link rel="import" href="../bower_components/paper-card/paper-card.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+
+<dom-module id="my-timetables">
+  <template>
+
+    <style include="shared-styles">
+      :host {
+        display: block;
+
+        padding: 10px;
+      }
+      
+      paper-card {
+        --paper-card-header-color: #000000;
+        max-width: 200px;
+
+      }
+    </style>
+
+    <div class="card">
+      <h1>Timetables</h1>
+      
+      <p>This page will show Maps, Timetables, and Fare charts </p>
+      
+      
+    </div>
+
+    <div class="route236">Test</div>
+
+    <!--> Route 236 </-->
+    <paper-card heading="236" class="route236">
+      <div class="card-content">Grinstead - Oxted</div>
+      <div class="card-actions">
+        <paper-button raised>Map</paper-button>
+        <paper-button raised>Timetable</paper-button>
+        <paper-button raised>Fare Chart</paper-button>
+      </div>
+    </paper-card>
+    <!--> Route 324 </-->
+    <paper-card heading="324" class="route324">
+      <div class="card-content">Burstow - Reigate College</div>
+      <div class="card-actions">
+        <paper-button raised>Map</paper-button>
+        <paper-button raised>Timetable</paper-button>
+        <paper-button raised>Fare Chart</paper-button>
+      </div>
+    </paper-card>
+    <!--> Route 357 </-->
+    <paper-card image="./images/logo-large.jpg" alt="Route 357">
+      <div class="card-content">357 - Selsdon - Reigate</div>
+      <div class="card-actions">
+        <paper-button raised>Map</paper-button>
+        <paper-button raised>Timetable</paper-button>
+        <paper-button raised>Fare Chart</paper-button>
+      </div>
+    </paper-card>
+    <!--> Route 409 </-->
+    <paper-card image="./images/logo-large.jpg" alt="Route 409" class="route409">
+      <div class="card-content">409 - East Grinstead - Selsdon</div>
+      <div class="card-actions">
+        <paper-button raised>Map</paper-button>
+        <paper-button raised>Timetable</paper-button>
+        <paper-button raised>Fare Chart</paper-button>
+      </div>
+    </paper-card>    
+    
+    
+  </template>
+
+  <script>
+    Polymer({
+      is: 'my-timetables'
+    });
+  </script>
+</dom-module>

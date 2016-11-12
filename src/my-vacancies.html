@@ -1,0 +1,80 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="shared-styles.html">
+<link rel="import" href="../bower_components/paper-card/paper-card.html">
+
+<dom-module id="my-vacancies">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+
+        padding: 10px;
+      }
+    </style>
+
+    <div class="card">
+      <h1>Vacancies</h1>
+      <p>
+          Do you want to join a dynamic and expanding company?<br>
+          Are you good with people and enjoy a challenge?<br>
+          If the answer is yes to any of these questions, Southdown is currently recruiting drivers to join our team at our Copthorne garage to cover bus service & contract work.<br>
+      </p> 
+      <p>    
+          <h2>What we need from you:</h2>
+          <ul style="list-style-type:disc">
+            <li>Have a sense of humour and enthusiastic attitude.</li>
+            <li>Hold a full car driver's licence, with at least one year's UK driving experience. </li>
+            <li>Be prepared to work varying shift patterns, which include rostered Saturdays. </li>
+            <li>Hold a current PCV licence or be prepared to train for one.</li>
+            <li>Sense of humour and enthusiastic attitude.</li>            
+        </ul>
+      </p> 
+      <p>In return you will be part of a friendly, expanding company with a modern fleet of buses.</p>
+      <p>    
+          <h2>Other benefits include:</h2>
+          <ul style="list-style-type:disc">
+            <li>Good rates of pay.</li>
+            <li>Company uniform.</li>
+            <li>Free travel for you & your family.</li>
+          </ul>
+      </p>       
+      <H2>To Apply</H2>
+      <P>
+        If you would like to be considered for an interview & driving assessment, please <BR>
+          **click here**<BR>
+          to download our application form & send it to: 
+      </P>
+      <P>
+        Recruitment<BR>
+        Southdown PSV<BR>
+        Silverwood<BR>
+        Snow Hill<BR>
+        Copthorne<BR>
+        RH10 3EN<BR>
+      </P>
+      <P>
+        Alternatively you can scan and email it to <a href="mailto:busops@southdownpsv.co.uk?subject=Vacancy enquiry from website">busops@southdownpsv.co.uk</a>
+      </P>
+    </div>
+
+      <paper-card image="/images/wevacancies.png" alt="Weekend Vacancies">
+      </paper-card>
+    
+  </template>
+
+  <script>
+    Polymer({
+      is: 'my-vacancies'
+    });
+  </script>
+</dom-module>
