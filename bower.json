@@ -1,7 +1,7 @@
 {
-  "name": "polymer-starter-kit",
+  "name": "Southdown Website",
   "authors": [
-    "The Polymer Authors"
+    "Me"
   ],
   "private": true,
   "dependencies": {

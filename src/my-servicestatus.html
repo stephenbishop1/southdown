@@ -10,11 +10,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <link rel="import" href="../bower_components/time-display/time-display.html">
-<link rel="import" href="../bower_components/polymerfire/polymerfire.html">
+<link rel="import" href="../bower_components/polymerfire/firebase-app.html">
+<link rel="import" href="../bower_components/polymerfire/firebase-query.html">
 <link rel="import" href="shared-styles.html">
 
 <dom-module id="my-servicestatus">
+
   <template>
+
     <style include="shared-styles">
       :host {
         display: block;
@@ -30,14 +33,21 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         text-align: left;
       }
     </style>
+<!--
+    <firebase-app
+      id="southdown"
+      api-key= "AIzaSyBj34GvQO8WDaFTrGcJCCxHz31lyUmDZBQ"
+      auth-domain= "southdown-f8529.firebaseapp.com"
+      database-url= "https://southdown-f8529.firebaseio.com">
+    </firebase-app>
 
     <firebase-query
         id="query"
         app-name="servicestatus"
         path="/routes"
-        data="{{notes}}">
+        data="{{servicestatusdata}}">
     </firebase-query>
-    
+
     <app-indexeddb-mirror
       session="[[user.uid]]"
       key="servicestatus"
@@ -49,53 +59,74 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <h1>Service Status - Retrieved at
         <time-display format="HH:mm"></time-display>
       </h1>
-      
+
       <table style="width:50%">
         <tr>
           <th>Route</th>
-          <th>Destination</th> 
+          <th>Destination</th>
           <th>Route Type</th>
           <th>Status</th>
           <th>Status Information</th>
         </tr>
         <tr>
           <td>236</td>
-          <td>East Grinstead - Lingfield - Dormansland - Edenbridge - Westerham - Oxted</td> 
+          <td>East Grinstead - Lingfield - Dormansland - Edenbridge - Westerham - Oxted</td>
           <td></td>
           <td></td>
           <td></td>
-        </tr>  
+        </tr>
         <tr>
           <td></td>
-          <td></td> 
           <td></td>
-          <td></td>
-          <td></td>    
-        </tr>
-          <tr>
-          <td></td>
-          <td></td> 
           <td></td>
           <td></td>
           <td></td>
         </tr>
           <tr>
           <td></td>
-          <td></td> 
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+          <tr>
+          <td></td>
+          <td></td>
           <td></td>
           <td></td>
           <td></td>
         </tr>
       </table>
-     
     </div>
+     Display data retrieved from database
+    Show data from database (this is inside template)
+    <div>
+      <div>
+        <ul>
+          <template is="dom-repeat" items="[[servicestatusdata]]">
+            <li>
+              <p class="content">[[servicestatusdata.content]]</p>
 
-    
+            </li>
+          </template>
+        </ul>
+
+      </div>
+    </div>
+    -->
+<div class="card">
+This is inside of the template
+</div>
   </template>
+
 
   <script>
     Polymer({
-      is: 'my-servicestatus'
+      is: 'my-servicestatus',
+      properties: {
+        servicestatusdata: {
+          type: Object
+        }
     });
   </script>
 </dom-module>
